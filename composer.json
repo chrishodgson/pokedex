@@ -1,8 +1,17 @@
 {
-  "name": "ukfast/pokedex",
-  "description": "The UKFast PHP developer test",
+  "name": "chodgson/pokedex",
+  "description": "Pokemon encyclopedia",
   "type": "project",
-  "require": {},
+  "require": {
+    "ext-curl": "^7.3",
+    "ext-json": "^1.7"
+  },
+  "autoload": {
+    "psr-4": { "Pokedex\\": "src/" }
+  },
   "minimum-stability": "dev",
-  "prefer-stable": true
+  "prefer-stable": true,
+  "require-dev": {
+    "phpunit/phpunit": "^8.4"
+  }
 }
